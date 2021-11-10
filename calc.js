@@ -6,7 +6,6 @@ const reader = readline.createInterface({
 });
 
 
-
 reader.question("What would you like to calculate?", function(input){
 	tokens = input.split(' ');
 	
@@ -32,7 +31,7 @@ reader.question("What would you like to calculate?", function(input){
 			if(!num3){console.log(num1*num2)} else {console.log(num1*num2*num3);}
 			break;
 
-		case "^":
+		case "sqr":
 			console.log(Math.sqrt(num1));
 			break;
 	}
